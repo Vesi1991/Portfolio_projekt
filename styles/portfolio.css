@@ -15,7 +15,8 @@ h3,
 h4,
 h4,
 h6 {
-  color: black font-weight bold;
+  color: black;
+  font-weight: bold;
   font-family: var(--heading-font-family);
 }
 
@@ -47,27 +48,33 @@ p {
 .hero h2 {
   font-family: var(--heading-font-family);
   font-weight: normal;
-  line-height: 2px;
+  line-height: 1px;
   font-size: 24px;
 }
 
-.about-section {
+.content-container {
   padding: 160px 20px;
 }
-.about-section h1 {
+.content h1 {
   font-size: 64px;
   line-height: 60px;
 }
-.about-section h2 {
+.content h2 {
   font-size: 18px;
   font-family: var(--default-font-family);
 }
-.about-section p {
-  font-size: 15px;
+
+.content h3 {
+  font-size: 24px;
+  line-height: 1.5;
+  margin: 20px 0 0;
   font-family: var(--default-font-family);
 }
-
-.about-section-content {
+.content p {
+  margin: 0;
+  font-size: 14px;
+}
+.content {
   margin: 30px;
 }
 
@@ -93,12 +100,12 @@ p {
   padding: 120px 60px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 600px) {
   .hero {
-    padding: 80px 20px;
+    padding: 40px 10px;
   }
 
-  .about-section {
+  .content {
     text-align: center;
     padding: 0;
   }
@@ -107,7 +114,7 @@ p {
     line-height: 2;
   }
   h2 {
-    font-size: 44px;
+    font-size: 32px;
   }
   .project-description {
     padding: 0;
