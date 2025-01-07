@@ -124,9 +124,10 @@ nav a:hover {
   color: var(--branding-color);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 480px) {
   .hero {
-    padding: 40px 10px;
+    padding: 20px 5px;
+    overflow: visible;
   }
 
   .content {
@@ -138,7 +139,9 @@ nav a:hover {
     line-height: 2;
   }
   h2 {
-    font-size: 32px;
+    font-size: 28px;
+    line-height: 1.1;
+    margin: 10px 0;
   }
   .project-description {
     padding: 0;
